@@ -1,0 +1,32 @@
+
+https://vuejs.org/v2/guide/ 
+
+https://kr.vuejs.org/v2/guide/comparison.html
+
+https://trends.google.com/trends/explore?date=today%205-y&q=vuejs,react,angular
+
+
+http://nodejs.org
+
+https://code.visualstudio.com/
+
+https://kr.vuejs.org/v2/guide/installation.html
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+https://cli.vuejs.org/guide/installation.html
+
+
+https://kr.vuejs.org/v2/guide/index.html 
+
+https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks
+
+https://medium.com/@brockreece/vue-parent-and-child-lifecycle-hooks-5d6236bd561f
+
+https://github.com/axios/axios
+
+
+https://jsonplaceholder.typicode.com/users
+
+# SpringBoot 연동
+http://localhost:8076/minibank/customer/swagger-ui.html
