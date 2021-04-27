@@ -30,3 +30,8 @@ https://jsonplaceholder.typicode.com/users
 
 # SpringBoot 연동
 http://localhost:8076/minibank/customer/swagger-ui.html
+
+
+# Oracle 11g express edtion 설치후 관리자에서 msa 사용자 생성
+create user msa identified by msa;
+grant resource, connect to msa;
