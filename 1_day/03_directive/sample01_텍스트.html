@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+      <ul id="app">
+        <li>{{message}}</li>
+        <li v-text="message"></li>
+        <li v-html="message"></li>
+        <li v-once>{{message}}</li>
+      </ul>
+
+       <script>
+        var app = new Vue({
+        el: '#app',
+        data:{
+            message:`<li>Hi Vue</li>`
+        }
+        });
+      </script>
+
+</body>
+</html>
