@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs 디렉티브</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+       <h3>배열 객체 반복</h3>
+       <ul>
+        <li v-for="(hero,idx) of heroes" :key="idx">{{idx+1}},{{hero}}</li>
+       </ul>
+       <hr>
+       <h3>JSON 객체 반복</h3>
+       <ul>
+           <li v-for="(value,key,index) of ironMan" :key="key">
+              {{index}}:{{key}}:{{value}}
+           </li>
+       </ul>
+    </div>
+  
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data: {
+               heroes:["아이언맨","헐크","캡틴아메리카","비전"],
+               ironMan:{
+                   name:"토니스타크",
+                   nickName:"깡통"
+               }
+            }
+        });
+    </script>
+</body>
+</html>
