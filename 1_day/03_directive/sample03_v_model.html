@@ -10,15 +10,23 @@
 <body>
       <div id="select">
          <label>가장 좋아하는 캐릭터는?</label>
-         <input type="text" v-model="favorite"><br>
+         <input type="text" v-model.lazy.trim="favorite"><br>
+         <label>팀 멤버를 선택하세요</label><br>
+         <input type="checkbox" value="1" v-model="team"><label>아이언맨</label>
+         <input type="checkbox" value="2" v-model="team"><label>토르</label>
+         <input type="checkbox" value="3" v-model="team"><label>헐크</label>
+         <br>
+         <label>출생 년도는?</label><br>
+         <input type="text" v-model.number.lazy="year"><br>
       </div>
       <div id="result">
          <p>당신의 선택은?</p>
          <ul>
            <li>캐릭터:{{favorite}}</li>
+           <li>팀:{{team}}</li>
+           <li>출생년도:{{year}}</li>
          </ul>
       </div>
-
        <script>
         
         let model = {favorite:"", team:[], year:""}
