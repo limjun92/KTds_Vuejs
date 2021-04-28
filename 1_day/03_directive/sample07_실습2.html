@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuejs 디렉티브</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
 </head>
 <body>
     <div id="app">
-       
+        <h1>교재 정보</h1>
+        <div v-for="(book,idx) in bookList" :key="idx">
+            <input type="checkbox" v-model="books" :value="book">
+                {{book.name}}&nbsp;<span>{{book.price}}</span>
+        </div>  
+        <hr> 
+        선택교재:
+        <div v-for="(book,i) in books" :key="book.name">{{book.name}}</div>
+        <hr>
     </div>
   
     <script>
         var app = new Vue({
             el:'#app',
             data: {
-               bookList:[
-                   {name:"자바의 정석", price:2000}
-               ]
+                bookList:[
+                    {name:"자바의 정석", price:2000},
+                    {name:"JSP의 정석", price:3000},
+                    {name:"Spring의 정석", price:1500},
+                    {name:"jQuery의 정석", price:1000},
+                    {name:"Angular의 정석", price:5000}
+                    ],
+                books:[]
             }
         });
     </script>
