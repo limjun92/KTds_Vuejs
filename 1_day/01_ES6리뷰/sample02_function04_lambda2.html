@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+           전통적인 자바스크립트 함수 작성방법
+           1) 함수 선언식 ( 이름있는 함수 )
+              function 함수명(변수){}
+
+           2) 함수 표현식 ( 익명 함수 )
+             var 변수명 = function(){};
+
+           * 기능적으로 표현 가능한 4가지 표현
+           1) 파라미터 변수 없고 리턴값도 없는 경우
+           2) 파라미터 변수 있고 리턴값도 없는 경우
+           3) 파라미터 변수 없고 리턴값도 있는 경우
+           4) 파라미터 변수 있고 리턴값도 있는 경우
+
+  /////////////////////////////////////////////////
+            lambda 함수
+           1) 함수 표현식(익명 함수)를 다르게 표현한 함수
+           2) 함수 표현식은 기능에 따라서 4가지 표현방법이 제공된다.
+        */
+    
+            // 2) 파라미터 변수 있고 리턴값도 없는 경우
+            var fun = function(n){
+                console.log("fun", n)
+            };
+            fun(10);
+
+            //람다 표현식1
+            var fun = (n)=>{
+                console.log("람다1 fun", n)
+            };
+            fun(100);
+            var fun = n=>{  // 파라미터가 한개면 () 생략가능
+                console.log("람다2 fun", n)
+            };
+
+           fun(200);
+    </script>
+</body>
+</html>
